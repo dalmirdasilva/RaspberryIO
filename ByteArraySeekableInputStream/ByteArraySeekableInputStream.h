@@ -7,8 +7,8 @@
  * a file system that implements SeekableInputStream interface. 
  */
 
-#ifndef __ARDUINO_IO_BYTE_ARRAY_SEEKABLE_INPUT_STREAM_H__
-#define __ARDUINO_IO_BYTE_ARRAY_SEEKABLE_INPUT_STREAM_H__ 1
+#ifndef __RASPBERRY_IO_BYTE_ARRAY_SEEKABLE_INPUT_STREAM_H__
+#define __RASPBERRY_IO_BYTE_ARRAY_SEEKABLE_INPUT_STREAM_H__ 1
 
 #include <SeekableInputStream.h>
 #include <ByteArrayInputStream.h>
@@ -22,4 +22,4 @@ public:
     virtual void seek(unsigned int pos);
 };
 
-#endif /* __ARDUINO_IO_BYTE_ARRAY_SEEKABLE_INPUT_STREAM_H__ */
+#endif /* __RASPBERRY_IO_BYTE_ARRAY_SEEKABLE_INPUT_STREAM_H__ */

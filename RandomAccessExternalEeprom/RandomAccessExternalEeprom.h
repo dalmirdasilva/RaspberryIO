@@ -8,8 +8,8 @@
  * stored in the externalEeprom system.
  */
 
-#ifndef __ARDUINO_IO_RANDOM_ACCESS_EXTERNAL_EEPROM_H__
-#define __ARDUINO_IO_RANDOM_ACCESS_EXTERNAL_EEPROM_H__ 1
+#ifndef __RASPBERRY_IO_RANDOM_ACCESS_EXTERNAL_EEPROM_H__
+#define __RASPBERRY_IO_RANDOM_ACCESS_EXTERNAL_EEPROM_H__ 1
 
 #include <Arduino.h>
 #include <RandomAccess.h>
@@ -249,4 +249,4 @@ public:
      */
     virtual unsigned int skipBytes(unsigned int n);
 };
-#endif /* __ARDUINO_IO_RANDOM_ACCESS_EXTERNAL_EEPROM_H__ */
+#endif /* __RASPBERRY_IO_RANDOM_ACCESS_EXTERNAL_EEPROM_H__ */

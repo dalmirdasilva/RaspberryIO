@@ -7,8 +7,8 @@
  * ExternalEeprom.
  */
 
-#ifndef __ARDUINO_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_H__
-#define __ARDUINO_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_H__ 1
+#ifndef __RASPBERRY_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_H__
+#define __RASPBERRY_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_H__ 1
 
 #include <OutputStream.h>
 #include <ExternalEeprom.h>
@@ -57,4 +57,4 @@ public:
     virtual void write(unsigned char* b, int off, int len);
 };
 
-#endif /* __ARDUINO_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_H__ */
+#endif /* __RASPBERRY_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_H__ */

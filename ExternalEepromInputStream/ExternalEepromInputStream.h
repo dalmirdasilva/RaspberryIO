@@ -7,8 +7,8 @@
  * externalEeprom. 
  */
 
-#ifndef __ARDUINO_IO_EXTERNAL_EEPROM_INPUT_STREAM_H__
-#define __ARDUINO_IO_EXTERNAL_EEPROM_INPUT_STREAM_H__ 1
+#ifndef __RASPBERRY_IO_EXTERNAL_EEPROM_INPUT_STREAM_H__
+#define __RASPBERRY_IO_EXTERNAL_EEPROM_INPUT_STREAM_H__ 1
 
 #include <InputStream.h>
 #include <ExternalEeprom.h>
@@ -95,4 +95,4 @@ public:
     virtual void reset();
 };
 
-#endif /* __ARDUINO_IO_EXTERNAL_EEPROM_INPUT_STREAM_H__ */
+#endif /* __RASPBERRY_IO_EXTERNAL_EEPROM_INPUT_STREAM_H__ */

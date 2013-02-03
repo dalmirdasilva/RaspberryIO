@@ -6,8 +6,8 @@
  * A externalEeprom output stream is an output stream for writing data to a ExternalEeprom.
  */
 
-#ifndef __ARDUINO_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_CPP__
-#define __ARDUINO_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_CPP__ 1
+#ifndef __RASPBERRY_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_CPP__
+#define __RASPBERRY_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_CPP__ 1
 
 #include "ExternalEepromOutputStream.h"
 
@@ -26,4 +26,4 @@ void ExternalEepromOutputStream::write(unsigned char* b, int off, int len) {
     pos += len;
 }
 
-#endif /* __ARDUINO_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_CPP__ */
+#endif /* __RASPBERRY_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_CPP__ */

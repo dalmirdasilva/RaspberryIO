@@ -6,8 +6,8 @@
  * A data output stream lets an application write types to an OutputStream.
  */
 
-#ifndef __ARDUINO_IO_DATA_OUTPUT_STREAM_CPP__
-#define __ARDUINO_IO_DATA_OUTPUT_STREAM_CPP__ 1
+#ifndef __RASPBERRY_IO_DATA_OUTPUT_STREAM_CPP__
+#define __RASPBERRY_IO_DATA_OUTPUT_STREAM_CPP__ 1
 
 #include "DataOutputStream.h"
 
@@ -77,4 +77,4 @@ void DataOutputStream::writeDouble(double v) {
     writeLong((long) v);
 }
 
-#endif /* __ARDUINO_IO_DATA_OUTPUT_STREAM_CPP__ */
+#endif /* __RASPBERRY_IO_DATA_OUTPUT_STREAM_CPP__ */

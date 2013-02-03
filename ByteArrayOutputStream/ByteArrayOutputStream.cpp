@@ -7,8 +7,8 @@
  * unsigned char array.
  */
 
-#ifndef __ARDUINO_IO_BYTE_ARRAY_OUTPUT_STREAM_CPP__
-#define __ARDUINO_IO_BYTE_ARRAY_OUTPUT_STREAM_CPP__ 1
+#ifndef __RASPBERRY_IO_BYTE_ARRAY_OUTPUT_STREAM_CPP__
+#define __RASPBERRY_IO_BYTE_ARRAY_OUTPUT_STREAM_CPP__ 1
 
 #include "ByteArrayOutputStream.h"
 
@@ -34,4 +34,4 @@ void ByteArrayOutputStream::write(unsigned char b) {
     buf[pos++] = b;
 }
 
-#endif /* __ARDUINO_IO_BYTE_ARRAY_OUTPUT_STREAM_CPP__ */
+#endif /* __RASPBERRY_IO_BYTE_ARRAY_OUTPUT_STREAM_CPP__ */

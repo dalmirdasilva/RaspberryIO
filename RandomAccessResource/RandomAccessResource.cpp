@@ -8,8 +8,8 @@
  * stored in the resource system.
  */
 
-#ifndef __ARDUINO_IO_RANDOM_ACCESS_RESOURCE_CPP__
-#define __ARDUINO_IO_RANDOM_ACCESS_RESOURCE_CPP__ 1
+#ifndef __RASPBERRY_IO_RANDOM_ACCESS_RESOURCE_CPP__
+#define __RASPBERRY_IO_RANDOM_ACCESS_RESOURCE_CPP__ 1
 
 #if USING_RESOURCE_LIBRARIES
 
@@ -170,4 +170,4 @@ unsigned int RandomAccessResource::skipBytes(unsigned int n) {
 
 #endif /* USING_RESOURCE_LIBRARIES */
 
-#endif /* __ARDUINO_IO_RANDOM_ACCESS_RESOURCE_CPP__ */
+#endif /* __RASPBERRY_IO_RANDOM_ACCESS_RESOURCE_CPP__ */

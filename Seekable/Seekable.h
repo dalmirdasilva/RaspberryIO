@@ -4,8 +4,8 @@
  * Seekable
  */
 
-#ifndef __ARDUINO_IO_SEEKABLE_H__
-#define __ARDUINO_IO_SEEKABLE_H__ 1
+#ifndef __RASPBERRY_IO_SEEKABLE_H__
+#define __RASPBERRY_IO_SEEKABLE_H__ 1
 
 class Seekable {
 public:
@@ -13,4 +13,4 @@ public:
     virtual void seek(unsigned int pos) = 0;
 };
 
-#endif /* __ARDUINO_IO_SEEKABLE_H__ */
+#endif /* __RASPBERRY_IO_SEEKABLE_H__ */

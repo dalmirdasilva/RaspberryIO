@@ -6,8 +6,8 @@
  * A ResourceInputStream obtains input bytes from a resource in a file system. 
  */
 
-#ifndef __ARDUINO_IO_RESOURCE_INPUT_STREAM_CPP__
-#define __ARDUINO_IO_RESOURCE_INPUT_STREAM_CPP__ 1
+#ifndef __RASPBERRY_IO_RESOURCE_INPUT_STREAM_CPP__
+#define __RASPBERRY_IO_RESOURCE_INPUT_STREAM_CPP__ 1
 
 #if USING_RESOURCE_LIBRARIES
 
@@ -54,4 +54,4 @@ void ResourceInputStream::reset() {
 
 #endif /* USING_RESOURCE_LIBRARIES */
 
-#endif /* __ARDUINO_IO_RESOURCE_INPUT_STREAM_CPP__ */
+#endif /* __RASPBERRY_IO_RESOURCE_INPUT_STREAM_CPP__ */

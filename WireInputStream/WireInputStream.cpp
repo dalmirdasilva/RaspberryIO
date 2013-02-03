@@ -6,8 +6,8 @@
  * A WireInputStream obtains input bytes from the wire bus.
  */
 
-#ifndef __ARDUINO_IO_WIRE_INPUT_STREAM_CPP__
-#define __ARDUINO_IO_WIRE_INPUT_STREAM_CPP__ 1
+#ifndef __RASPBERRY_IO_WIRE_INPUT_STREAM_CPP__
+#define __RASPBERRY_IO_WIRE_INPUT_STREAM_CPP__ 1
 
 #include "WireInputStream.h"
 
@@ -44,4 +44,4 @@ int WireInputStream::read(unsigned char* b, int off, int len) {
     return i;
 }
 
-#endif /* __ARDUINO_IO_WIRE_INPUT_STREAM_CPP__ */
+#endif /* __RASPBERRY_IO_WIRE_INPUT_STREAM_CPP__ */

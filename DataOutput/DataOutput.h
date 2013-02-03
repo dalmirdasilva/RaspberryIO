@@ -7,8 +7,8 @@
  * primitive types to a series of bytes and writing these bytes to a binary stream.
  */
 
-#ifndef __ARDUINO_IO_DATA_OUTPUT_H__
-#define __ARDUINO_IO_DATA_OUTPUT_H__ 1
+#ifndef __RASPBERRY_IO_DATA_OUTPUT_H__
+#define __RASPBERRY_IO_DATA_OUTPUT_H__ 1
 
 #include <Arduino.h>
 
@@ -116,4 +116,4 @@ public:
     virtual void writeDouble(double v) = 0;
 };
 
-#endif /* __ARDUINO_IO_DATA_OUTPUT_H__ */
+#endif /* __RASPBERRY_IO_DATA_OUTPUT_H__ */

@@ -7,8 +7,8 @@
  * unsigned char array.
  */
 
-#ifndef __ARDUINO_IO_RANDOM_ACCESS_BYTE_ARRAY_CPP__
-#define __ARDUINO_IO_RANDOM_ACCESS_BYTE_ARRAY_CPP__ 1
+#ifndef __RASPBERRY_IO_RANDOM_ACCESS_BYTE_ARRAY_CPP__
+#define __RASPBERRY_IO_RANDOM_ACCESS_BYTE_ARRAY_CPP__ 1
 
 #include "RandomAccessByteArray.h"
 
@@ -165,4 +165,4 @@ unsigned int RandomAccessByteArray::skipBytes(unsigned int n) {
     return skipped;
 }
 
-#endif /* __ARDUINO_IO_RANDOM_ACCESS_BYTE_ARRAY_CPP__ */
+#endif /* __RASPBERRY_IO_RANDOM_ACCESS_BYTE_ARRAY_CPP__ */

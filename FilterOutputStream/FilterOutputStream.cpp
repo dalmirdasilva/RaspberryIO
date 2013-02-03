@@ -16,8 +16,8 @@
  * methods as well as provide additional methods and fields.
  */
 
-#ifndef __ARDUINO_IO_FILTER_OUTPUT_STREAM_CPP__
-#define __ARDUINO_IO_FILTER_OUTPUT_STREAM_CPP__ 1
+#ifndef __RASPBERRY_IO_FILTER_OUTPUT_STREAM_CPP__
+#define __RASPBERRY_IO_FILTER_OUTPUT_STREAM_CPP__ 1
 
 #include "FilterOutputStream.h"
 
@@ -46,5 +46,5 @@ void FilterOutputStream::close() {
     out->close();
 }
 
-#endif /* __ARDUINO_IO_FILTER_OUTPUT_STREAM_CPP__ 1 */
+#endif /* __RASPBERRY_IO_FILTER_OUTPUT_STREAM_CPP__ 1 */
 

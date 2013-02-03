@@ -7,8 +7,8 @@
  * unsigned char array.
  */
 
-#ifndef __ARDUINO_IO_RANDOM_ACCESS_BYTE_ARRAY_H__
-#define __ARDUINO_IO_RANDOM_ACCESS_BYTE_ARRAY_H__ 1
+#ifndef __RASPBERRY_IO_RANDOM_ACCESS_BYTE_ARRAY_H__
+#define __RASPBERRY_IO_RANDOM_ACCESS_BYTE_ARRAY_H__ 1
 
 #include <RandomAccess.h>
 #include <Closeable.h>
@@ -252,4 +252,4 @@ public:
      */
     virtual unsigned int skipBytes(unsigned int n);
 };
-#endif /* __ARDUINO_IO_RANDOM_ACCESS_BYTE_ARRAY_H__ */
+#endif /* __RASPBERRY_IO_RANDOM_ACCESS_BYTE_ARRAY_H__ */

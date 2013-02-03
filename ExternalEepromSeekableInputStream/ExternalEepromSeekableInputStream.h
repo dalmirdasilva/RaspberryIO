@@ -7,8 +7,8 @@
  * input stream. 
  */
 
-#ifndef __ARDUINO_IO_EXTERNAL_EEPROM_SEEKABLE_INPUT_STREAM_H__
-#define __ARDUINO_IO_EXTERNAL_EEPROM_SEEKABLE_INPUT_STREAM_H__ 1
+#ifndef __RASPBERRY_IO_EXTERNAL_EEPROM_SEEKABLE_INPUT_STREAM_H__
+#define __RASPBERRY_IO_EXTERNAL_EEPROM_SEEKABLE_INPUT_STREAM_H__ 1
 
 #include <ExternalEeprom.h>
 #include <SeekableInputStream.h>
@@ -33,4 +33,4 @@ public:
     virtual void seek(unsigned int pos);
 };
 
-#endif /* __ARDUINO_IO_EXTERNAL_EEPROM_SEEKABLE_INPUT_STREAM_H__ */
+#endif /* __RASPBERRY_IO_EXTERNAL_EEPROM_SEEKABLE_INPUT_STREAM_H__ */

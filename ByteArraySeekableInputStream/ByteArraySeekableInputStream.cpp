@@ -7,8 +7,8 @@
  * a file system that implements SeekableInputStream interface. 
  */
 
-#ifndef __ARDUINO_IO_BYTE_ARRAY_SEEKABLE_INPUT_STREAM_CPP__
-#define __ARDUINO_IO_BYTE_ARRAY_SEEKABLE_INPUT_STREAM_CPP__ 1
+#ifndef __RASPBERRY_IO_BYTE_ARRAY_SEEKABLE_INPUT_STREAM_CPP__
+#define __RASPBERRY_IO_BYTE_ARRAY_SEEKABLE_INPUT_STREAM_CPP__ 1
 
 #include "ByteArraySeekableInputStream.h"
 
@@ -21,4 +21,4 @@ void ByteArraySeekableInputStream::seek(unsigned int pos) {
     this->pos = pos;
 }
 
-#endif /* __ARDUINO_IO_BYTE_ARRAY_SEEKABLE_INPUT_STREAM_CPP__ */
+#endif /* __RASPBERRY_IO_BYTE_ARRAY_SEEKABLE_INPUT_STREAM_CPP__ */

@@ -8,8 +8,8 @@
  * arduino types.
  */
 
-#ifndef __ARDUINO_IO_DATA_INPUT_H__
-#define __ARDUINO_IO_DATA_INPUT_H__ 1
+#ifndef __RASPBERRY_IO_DATA_INPUT_H__
+#define __RASPBERRY_IO_DATA_INPUT_H__ 1
 
 #include <Arduino.h>
 
@@ -110,4 +110,4 @@ public:
     virtual unsigned int skipBytes(unsigned int n) = 0;
 };
 
-#endif /* __ARDUINO_IO_DATA_INPUT_H__ */
+#endif /* __RASPBERRY_IO_DATA_INPUT_H__ */

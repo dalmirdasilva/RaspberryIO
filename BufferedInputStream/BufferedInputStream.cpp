@@ -21,8 +21,8 @@
  * the contained input stream.
  */
 
-#ifndef __ARDUINO_IO_BUFFERED_INPUT_STREAM_CPP__
-#define __ARDUINO_IO_BUFFERED_INPUT_STREAM_CPP__ 1
+#ifndef __RASPBERRY_IO_BUFFERED_INPUT_STREAM_CPP__
+#define __RASPBERRY_IO_BUFFERED_INPUT_STREAM_CPP__ 1
 
 #include "BufferedInputStream.h"
 
@@ -160,4 +160,4 @@ unsigned int BufferedInputStream::skip(unsigned int n) {
     return skiped;
 }
 
-#endif /* __ARDUINO_IO_BUFFERED_INPUT_STREAM_CPP__ */
+#endif /* __RASPBERRY_IO_BUFFERED_INPUT_STREAM_CPP__ */

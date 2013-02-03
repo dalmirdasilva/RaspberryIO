@@ -7,8 +7,8 @@
  * may be read from the stream.
  */
 
-#ifndef __ARDUINO_IO_BYTE_ARRAY_INPUT_STREAM_H__
-#define __ARDUINO_IO_BYTE_ARRAY_INPUT_STREAM_H__ 1
+#ifndef __RASPBERRY_IO_BYTE_ARRAY_INPUT_STREAM_H__
+#define __RASPBERRY_IO_BYTE_ARRAY_INPUT_STREAM_H__ 1
 
 #include <InputStream.h>
 
@@ -78,4 +78,4 @@ public:
     virtual void reset();
 };
 
-#endif /* __ARDUINO_IO_BYTE_ARRAY_INPUT_STREAM_H__ */
+#endif /* __RASPBERRY_IO_BYTE_ARRAY_INPUT_STREAM_H__ */

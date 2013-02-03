@@ -9,8 +9,8 @@
  * system for each unsigned char written.
  */
 
-#ifndef __ARDUINO_IO_BUFFERED_OUTPUT_STREAM_H__
-#define __ARDUINO_IO_BUFFERED_OUTPUT_STREAM_H__ 1
+#ifndef __RASPBERRY_IO_BUFFERED_OUTPUT_STREAM_H__
+#define __RASPBERRY_IO_BUFFERED_OUTPUT_STREAM_H__ 1
 
 #include <FilterOutputStream.h>
 
@@ -98,4 +98,4 @@ private:
     void flushBuffer();
 };
 
-#endif /* __ARDUINO_IO_BUFFERED_OUTPUT_STREAM_H__ */
+#endif /* __RASPBERRY_IO_BUFFERED_OUTPUT_STREAM_H__ */

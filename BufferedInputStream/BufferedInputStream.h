@@ -21,8 +21,8 @@
  * the contained input stream.
  */
 
-#ifndef __ARDUINO_IO_BUFFERED_INPUT_STREAM_H__
-#define __ARDUINO_IO_BUFFERED_INPUT_STREAM_H__ 1
+#ifndef __RASPBERRY_IO_BUFFERED_INPUT_STREAM_H__
+#define __RASPBERRY_IO_BUFFERED_INPUT_STREAM_H__ 1
 
 #include <FilterInputStream.h>
 
@@ -178,4 +178,4 @@ private:
     void fill(int startPos);
 };
 
-#endif /* __ARDUINO_IO_BUFFERED_INPUT_STREAM_H__ */
+#endif /* __RASPBERRY_IO_BUFFERED_INPUT_STREAM_H__ */

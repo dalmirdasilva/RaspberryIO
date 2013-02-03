@@ -6,8 +6,8 @@
  * A WireInputStream obtains input bytes from the wire bus.
  */
 
-#ifndef __ARDUINO_IO_WIRE_INPUT_STREAM_H__
-#define __ARDUINO_IO_WIRE_INPUT_STREAM_H__ 1
+#ifndef __RASPBERRY_IO_WIRE_INPUT_STREAM_H__
+#define __RASPBERRY_IO_WIRE_INPUT_STREAM_H__ 1
 
 #include <Arduino.h>
 #include <Wire.h>
@@ -52,4 +52,4 @@ public:
     virtual int read(unsigned char* b, int off, int len);
 };
 
-#endif /* __ARDUINO_IO_WIRE_INPUT_STREAM_H__ */
+#endif /* __RASPBERRY_IO_WIRE_INPUT_STREAM_H__ */

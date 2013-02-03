@@ -8,8 +8,8 @@
  * stored in the externalEeprom system.
  */
 
-#ifndef __ARDUINO_IO_RANDOM_ACCESS_EXTERNAL_EEPROM_CPP__
-#define __ARDUINO_IO_RANDOM_ACCESS_EXTERNAL_EEPROM_CPP__ 1
+#ifndef __RASPBERRY_IO_RANDOM_ACCESS_EXTERNAL_EEPROM_CPP__
+#define __RASPBERRY_IO_RANDOM_ACCESS_EXTERNAL_EEPROM_CPP__ 1
 
 #include <ExternalEeprom.h>
 #include "RandomAccessExternalEeprom.h"
@@ -167,4 +167,4 @@ unsigned int RandomAccessExternalEeprom::skipBytes(unsigned int n) {
     return skipped;
 }
 
-#endif /* __ARDUINO_IO_RANDOM_ACCESS_EXTERNAL_EEPROM_CPP__ */
+#endif /* __RASPBERRY_IO_RANDOM_ACCESS_EXTERNAL_EEPROM_CPP__ */

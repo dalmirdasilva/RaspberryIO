@@ -7,10 +7,10 @@
  * reconstructing from them data in any of the primitive types.
  */
 
-#ifndef __ARDUINO_IO_DATA_INPUT_CPP__
-#define __ARDUINO_IO_DATA_INPUT_CPP__ 1
+#ifndef __RASPBERRY_IO_DATA_INPUT_CPP__
+#define __RASPBERRY_IO_DATA_INPUT_CPP__ 1
 
 #include "DataInput.h"
 
-#endif /* __ARDUINO_IO_DATA_INPUT_CPP__ */
+#endif /* __RASPBERRY_IO_DATA_INPUT_CPP__ */
 

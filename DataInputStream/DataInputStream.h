@@ -6,8 +6,8 @@
  * A data input stream lets an application read data from a InputStream.
  */
 
-#ifndef __ARDUINO_IO_DATA_INPUT_STREAM_H__
-#define __ARDUINO_IO_DATA_INPUT_STREAM_H__ 1
+#ifndef __RASPBERRY_IO_DATA_INPUT_STREAM_H__
+#define __RASPBERRY_IO_DATA_INPUT_STREAM_H__ 1
 
 #include <DataInput.h>
 #include <InputStream.h>
@@ -122,4 +122,4 @@ public:
     virtual unsigned int skipBytes(unsigned int n);
 };
 
-#endif /* __ARDUINO_IO_DATA_INPUT_STREAM_H__ */
+#endif /* __RASPBERRY_IO_DATA_INPUT_STREAM_H__ */

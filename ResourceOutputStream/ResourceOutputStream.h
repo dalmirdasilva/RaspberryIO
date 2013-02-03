@@ -6,8 +6,8 @@
  * A resource output stream is an output stream for writing data to a Resource.
  */
 
-#ifndef __ARDUINO_IO_RESOURCE_OUTPUT_STREAM_H__
-#define __ARDUINO_IO_RESOURCE_OUTPUT_STREAM_H__ 1
+#ifndef __RASPBERRY_IO_RESOURCE_OUTPUT_STREAM_H__
+#define __RASPBERRY_IO_RESOURCE_OUTPUT_STREAM_H__ 1
 
 #if USING_RESOURCE_LIBRARIES
 
@@ -44,4 +44,4 @@ public:
 
 #endif /* USING_RESOURCE_LIBRARIES */
 
-#endif /* __ARDUINO_IO_RESOURCE_OUTPUT_STREAM_H__ */
+#endif /* __RASPBERRY_IO_RESOURCE_OUTPUT_STREAM_H__ */

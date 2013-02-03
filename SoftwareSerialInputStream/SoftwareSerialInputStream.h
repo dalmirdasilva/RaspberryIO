@@ -6,8 +6,8 @@
  * A SoftwareSerialInputStream obtains input bytes from a serial port.
  */
 
-#ifndef __ARDUINO_IO_SOFTWARE_SERIAL_INPUT_STREAM_H__
-#define __ARDUINO_IO_SOFTWARE_SERIAL_INPUT_STREAM_H__ 1
+#ifndef __RASPBERRY_IO_SOFTWARE_SERIAL_INPUT_STREAM_H__
+#define __RASPBERRY_IO_SOFTWARE_SERIAL_INPUT_STREAM_H__ 1
 
 #include <Arduino.h>
 #include <SoftwareSerial.h>
@@ -44,4 +44,4 @@ public:
     virtual int read();
 };
 
-#endif /* __ARDUINO_IO_SOFTWARE_SERIAL_INPUT_STREAM_H__ */
+#endif /* __RASPBERRY_IO_SOFTWARE_SERIAL_INPUT_STREAM_H__ */

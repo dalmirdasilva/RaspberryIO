@@ -10,8 +10,8 @@
  * provide a method that returns the next unsigned char of input.
  */
 
-#ifndef __ARDUINO_IO_INPUT_STREAM_H__
-#define __ARDUINO_IO_INPUT_STREAM_H__ 1
+#ifndef __RASPBERRY_IO_INPUT_STREAM_H__
+#define __RASPBERRY_IO_INPUT_STREAM_H__ 1
 
 #include <Closeable.h>
 
@@ -74,4 +74,4 @@ public:
     virtual unsigned int skip(unsigned int n);
 };
 
-#endif /* __ARDUINO_IO_INPUT_STREAM_H__ */
+#endif /* __RASPBERRY_IO_INPUT_STREAM_H__ */

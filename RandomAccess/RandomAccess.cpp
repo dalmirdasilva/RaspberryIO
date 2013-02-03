@@ -6,9 +6,9 @@
  * Interface derived from DataInput, DataOutput, Closeable and Seekable.
  */
 
-#ifndef __ARDUINO_IO_RANDOM_ACCESS_CPP__
-#define __ARDUINO_IO_RANDOM_ACCESS_CPP__ 1
+#ifndef __RASPBERRY_IO_RANDOM_ACCESS_CPP__
+#define __RASPBERRY_IO_RANDOM_ACCESS_CPP__ 1
 
 #include "RandomAccess.h"
 
-#endif /* __ARDUINO_IO_RANDOM_ACCESS_CPP__ */
+#endif /* __RASPBERRY_IO_RANDOM_ACCESS_CPP__ */

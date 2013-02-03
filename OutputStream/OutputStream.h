@@ -12,8 +12,8 @@
  * that writes one unsigned char of output.
  */
 
-#ifndef __ARDUINO_IO_OUTPUT_STREAM_H__
-#define __ARDUINO_IO_OUTPUT_STREAM_H__ 1
+#ifndef __RASPBERRY_IO_OUTPUT_STREAM_H__
+#define __RASPBERRY_IO_OUTPUT_STREAM_H__ 1
 
 #include <Closeable.h>
 
@@ -57,4 +57,4 @@ public:
     virtual void write(unsigned char* b, int off, int len);
 };
 
-#endif /* __ARDUINO_IO_OUTPUT_STREAM_H__ */
+#endif /* __RASPBERRY_IO_OUTPUT_STREAM_H__ */

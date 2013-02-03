@@ -10,8 +10,8 @@
  * provide a method that returns the next unsigned char of input.
  */
 
-#ifndef __ARDUINO_IO_INPUT_STREAM_CPP__
-#define __ARDUINO_IO_INPUT_STREAM_CPP__ 1
+#ifndef __RASPBERRY_IO_INPUT_STREAM_CPP__
+#define __RASPBERRY_IO_INPUT_STREAM_CPP__ 1
 
 #include "InputStream.h"
 
@@ -64,4 +64,4 @@ unsigned int InputStream::skip(unsigned int n) {
     return i;
 }
 
-#endif /* __ARDUINO_IO_INPUT_STREAM_CPP__ */
+#endif /* __RASPBERRY_IO_INPUT_STREAM_CPP__ */

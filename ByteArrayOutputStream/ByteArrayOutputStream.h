@@ -7,8 +7,8 @@
  * unsigned char array.
  */
 
-#ifndef __ARDUINO_IO_BYTE_ARRAY_OUTPUT_STREAM_H__
-#define __ARDUINO_IO_BYTE_ARRAY_OUTPUT_STREAM_H__ 1
+#ifndef __RASPBERRY_IO_BYTE_ARRAY_OUTPUT_STREAM_H__
+#define __RASPBERRY_IO_BYTE_ARRAY_OUTPUT_STREAM_H__ 1
 
 #include <OutputStream.h>
 
@@ -72,4 +72,4 @@ public:
     virtual void write(unsigned char b);
 };
 
-#endif /* __ARDUINO_IO_BYTE_ARRAY_OUTPUT_STREAM_H__ */
+#endif /* __RASPBERRY_IO_BYTE_ARRAY_OUTPUT_STREAM_H__ */
