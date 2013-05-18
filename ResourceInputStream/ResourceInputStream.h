@@ -1,5 +1,5 @@
 /**
- * Arduino IO
+ * Raspberry IO
  * 
  * ResourceInputStream
  * 
@@ -17,68 +17,68 @@
 class ResourceInputStream : public virtual InputStream {
 protected:
 
-    /* 
-     * The resource where data is stored.
-     */
-    Resource* resource;
+	/* 
+	 * The resource where data is stored.
+	 */
+	Resource* resource;
 
-    /*
-     * Current position
-     */
-    unsigned int pos;
+	/*
+	 * Current position
+	 */
+	unsigned int pos;
 
-    /*
-     * The currently marked position in the stream.
-     */
-    unsigned int markpos;
+	/*
+	 * The currently marked position in the stream.
+	 */
+	unsigned int markpos;
 
-    /*
-     * The size of the resource.
-     */
-    unsigned int resourceSize;
+	/*
+	 * The size of the resource.
+	 */
+	unsigned int resourceSize;
 
 public:
 
-    ResourceInputStream(Resource* resource);
+	ResourceInputStream(Resource* resource);
 
-    /**
-     * Returns the number of bytes that can be read(or skipped over) from this 
-     * input stream without blocking by the next caller of a method for this input stream.
-     * 
-     */
-    virtual int available();
+	/**
+	 * Returns the number of bytes that can be read(or skipped over) from this 
+	 * input stream without blocking by the next caller of a method for this input stream.
+	 * 
+	 */
+	virtual int available();
 
-    /**
-     * Closes this input stream and releases any system resources associated 
-     * with the stream.
-     */
-    virtual void close();
+	/**
+	 * Closes this input stream and releases any system resources associated 
+	 * with the stream.
+	 */
+	virtual void close();
 
-    /**
-     * Marks the current position in this input stream.
-     */
-    virtual void mark();
+	/**
+	 * Marks the current position in this input stream.
+	 */
+	virtual void mark();
 
-    /**
-     * Tests if this input stream supports the mark and reset methods.
-     */
-    virtual bool markSupported();
+	/**
+	 * Tests if this input stream supports the mark and reset methods.
+	 */
+	virtual bool markSupported();
 
-    /**
-     * Using the parent read.
-     */
-    using InputStream::read;
+	/**
+	 * Using the parent read.
+	 */
+	using InputStream::read;
 
-    /**
-     * Reads the next unsigned char of data from the input stream.
-     */
-    virtual int read();
+	/**
+	 * Reads the next unsigned char of data from the input stream.
+	 */
+	virtual int read();
 
-    /**
-     * Repositions this stream to the position at the time the mark method was 
-     * last called on this input stream.
-     */
-    virtual void reset();
+	/**
+	 * Repositions this stream to the position at the time the mark method was 
+	 * last called on this input stream.
+	 */
+	virtual void reset();
 };
 
 #endif /* USING_RESOURCE_LIBRARIES */

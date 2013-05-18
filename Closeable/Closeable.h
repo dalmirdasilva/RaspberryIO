@@ -1,5 +1,5 @@
 /**
- * Arduino IO
+ * Raspberry IO
  * 
  * Closeable
  *
@@ -12,7 +12,10 @@
 class Closeable {
 public:
 
-    virtual void close() = 0;
+	virtual ~Closeable() {
+	}
+
+	virtual void close() = 0;
 };
 
 #endif /* __RASPBERRY_IO_CLOSEABLE_H__ */

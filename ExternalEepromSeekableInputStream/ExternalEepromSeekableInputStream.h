@@ -1,5 +1,5 @@
 /**
- * Arduino IO
+ * Raspberry IO
  * 
  * ExternalEepromSeekableInputStream
  * 
@@ -14,23 +14,23 @@
 #include <SeekableInputStream.h>
 #include <ExternalEepromInputStream.h>
 
-class ExternalEepromSeekableInputStream : public ExternalEepromInputStream,
-        public SeekableInputStream {
+class ExternalEepromSeekableInputStream: public ExternalEepromInputStream,
+		public SeekableInputStream {
 public:
 
-    /**
-     * Public constructor.
-     * 
-     * @param resource  The external eeprom to be used.
-     */
-    ExternalEepromSeekableInputStream(ExternalEeprom* externalEeprom);
+	/**
+	 * Public constructor.
+	 * 
+	 * @param resource  The external eeprom to be used.
+	 */
+	ExternalEepromSeekableInputStream(ExternalEeprom* externalEeprom);
 
-    /**
-     * Seeks this input stream to the position.
-     * 
-     * @param pos       THe position.
-     */
-    virtual void seek(unsigned int pos);
+	/**
+	 * Seeks this input stream to the position.
+	 * 
+	 * @param pos       THe position.
+	 */
+	virtual void seek(unsigned int pos);
 };
 
 #endif /* __RASPBERRY_IO_EXTERNAL_EEPROM_SEEKABLE_INPUT_STREAM_H__ */

@@ -1,5 +1,5 @@
 /**
- * Arduino IO
+ * Raspberry IO
  * 
  * Seekable
  */
@@ -10,7 +10,10 @@
 class Seekable {
 public:
 
-    virtual void seek(unsigned int pos) = 0;
+	virtual ~Seekable() {
+	}
+
+	virtual void seek(unsigned int pos) = 0;
 };
 
 #endif /* __RASPBERRY_IO_SEEKABLE_H__ */

@@ -1,5 +1,5 @@
 /**
- * Arduino IO
+ * Raspberry IO
  * 
  * ResourceOutputStream
  *
@@ -17,29 +17,29 @@
 class ResourceOutputStream : public OutputStream {
 protected:
 
-    /* 
-     * The resource where data is stored.
-     */
-    Resource* resource;
+	/* 
+	 * The resource where data is stored.
+	 */
+	Resource* resource;
 
 public:
 
-    ResourceOutputStream(Resource* resource);
+	ResourceOutputStream(Resource* resource);
 
-    /**
-     * Closing a ResourceOutputStream has no effect.
-     */
-    virtual void close();
+	/**
+	 * Closing a ResourceOutputStream has no effect.
+	 */
+	virtual void close();
 
-    /**
-     * Using parent write.
-     */
-    using OutputStream::write;
+	/**
+	 * Using parent write.
+	 */
+	using OutputStream::write;
 
-    /**
-     * Writes the specified unsigned char to this output stream.
-     */
-    virtual void write(unsigned char b);
+	/**
+	 * Writes the specified unsigned char to this output stream.
+	 */
+	virtual void write(unsigned char b);
 };
 
 #endif /* USING_RESOURCE_LIBRARIES */

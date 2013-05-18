@@ -1,5 +1,5 @@
 /**
- * Arduino IO
+ * Raspberry IO
  * 
  * ExternalEepromOutputStream
  *
@@ -12,18 +12,18 @@
 #include "ExternalEepromOutputStream.h"
 
 ExternalEepromOutputStream::ExternalEepromOutputStream(
-        ExternalEeprom* externalEeprom) :
-        externalEeprom(externalEeprom) {
-    pos = 0;
+		ExternalEeprom* externalEeprom) :
+		externalEeprom(externalEeprom) {
+	pos = 0;
 }
 
 void ExternalEepromOutputStream::write(unsigned char b) {
-    externalEeprom->write(pos++, b);
+	externalEeprom->write(pos++, b);
 }
 
 void ExternalEepromOutputStream::write(unsigned char* b, int off, int len) {
-    externalEeprom->writeBytes(pos, &b[off], len);
-    pos += len;
+	externalEeprom->writeBytes(pos, &b[off], len);
+	pos += len;
 }
 
 #endif /* __RASPBERRY_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_CPP__ */

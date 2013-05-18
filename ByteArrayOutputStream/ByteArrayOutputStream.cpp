@@ -1,5 +1,5 @@
 /**
- * Arduino IO
+ * Raspberry IO
  * 
  * ByteArrayOutputStream
  *
@@ -13,25 +13,25 @@
 #include "ByteArrayOutputStream.h"
 
 ByteArrayOutputStream::ByteArrayOutputStream(unsigned char* buf,
-        unsigned int count) :
-        buf(buf), count(count) {
-    pos = 0;
+		unsigned int count) :
+		buf(buf), count(count) {
+	pos = 0;
 }
 
 void ByteArrayOutputStream::reset() {
-    pos = 0;
+	pos = 0;
 }
 
 unsigned int ByteArrayOutputStream::size() {
-    return count;
+	return count;
 }
 
 unsigned char* ByteArrayOutputStream::toByteArray() {
-    return buf;
+	return buf;
 }
 
 void ByteArrayOutputStream::write(unsigned char b) {
-    buf[pos++] = b;
+	buf[pos++] = b;
 }
 
 #endif /* __RASPBERRY_IO_BYTE_ARRAY_OUTPUT_STREAM_CPP__ */

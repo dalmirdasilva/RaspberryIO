@@ -1,5 +1,5 @@
 /**
- * Arduino IO
+ * Raspberry IO
  * 
  * ExternalEepromOutputStream
  *
@@ -13,48 +13,48 @@
 #include <OutputStream.h>
 #include <ExternalEeprom.h>
 
-class ExternalEepromOutputStream : public OutputStream {
+class ExternalEepromOutputStream: public OutputStream {
 
-    /**
-     * The associated eeprom.
-     */
-    ExternalEeprom* externalEeprom;
+	/**
+	 * The associated eeprom.
+	 */
+	ExternalEeprom* externalEeprom;
 
-    /**
-     * Current eeprom position.
-     */
-    unsigned int pos;
+	/**
+	 * Current eeprom position.
+	 */
+	unsigned int pos;
 
 public:
 
-    /**
-     * Public constructor.
-     * 
-     * @param externalEeprom
-     */
-    ExternalEepromOutputStream(ExternalEeprom* externalEeprom);
+	/**
+	 * Public constructor.
+	 * 
+	 * @param externalEeprom
+	 */
+	ExternalEepromOutputStream(ExternalEeprom* externalEeprom);
 
-    /**
-     * Using parent write.
-     */
-    using OutputStream::write;
+	/**
+	 * Using parent write.
+	 */
+	using OutputStream::write;
 
-    /**
-     * Writes the specified unsigned char to this output stream.
-     * 
-     * @param b
-     */
-    virtual void write(unsigned char b);
+	/**
+	 * Writes the specified unsigned char to this output stream.
+	 * 
+	 * @param b
+	 */
+	virtual void write(unsigned char b);
 
-    /**
-     * Writes len bytes from the specified unsigned char array starting at offset off to 
-     * this output stream.
-     * 
-     * @param b
-     * @param off
-     * @param len
-     */
-    virtual void write(unsigned char* b, int off, int len);
+	/**
+	 * Writes len bytes from the specified unsigned char array starting at offset off to 
+	 * this output stream.
+	 * 
+	 * @param b
+	 * @param off
+	 * @param len
+	 */
+	virtual void write(unsigned char* b, int off, int len);
 };
 
 #endif /* __RASPBERRY_IO_EXTERNAL_EEPROM_OUTPUT_STREAM_H__ */

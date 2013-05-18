@@ -1,5 +1,5 @@
 /**
- * Arduino IO
+ * Raspberry IO
  * 
  * ExternalEepromSeekableInputStream
  * 
@@ -13,12 +13,12 @@
 #include "ExternalEepromSeekableInputStream.h"
 
 ExternalEepromSeekableInputStream::ExternalEepromSeekableInputStream(
-        ExternalEeprom* externalEeprom) :
-        ExternalEepromInputStream(externalEeprom) {
+		ExternalEeprom* externalEeprom) :
+		ExternalEepromInputStream(externalEeprom) {
 }
 
 void ExternalEepromSeekableInputStream::seek(unsigned int pos) {
-    this->pos = pos;
+	this->pos = pos;
 }
 
 #endif /* __RASPBERRY_IO_EXTERNAL_EEPROM_SEEKABLE_INPUT_STREAM_CPP__ */

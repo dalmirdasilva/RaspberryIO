@@ -1,5 +1,5 @@
 /**
- * Arduino IO
+ * Raspberry IO
  * 
  * ByteArraySeekableInputStream
  * 
@@ -13,12 +13,12 @@
 #include "ByteArraySeekableInputStream.h"
 
 ByteArraySeekableInputStream::ByteArraySeekableInputStream(unsigned char* buf,
-        unsigned int count) :
-        ByteArrayInputStream(buf, count) {
+		unsigned int count) :
+		ByteArrayInputStream(buf, count) {
 }
 
 void ByteArraySeekableInputStream::seek(unsigned int pos) {
-    this->pos = pos;
+	this->pos = pos;
 }
 
 #endif /* __RASPBERRY_IO_BYTE_ARRAY_SEEKABLE_INPUT_STREAM_CPP__ */

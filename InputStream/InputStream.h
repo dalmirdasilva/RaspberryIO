@@ -1,5 +1,5 @@
 /**
- * Arduino IO
+ * Raspberry IO
  * 
  * InputStream
  *
@@ -15,63 +15,66 @@
 
 #include <Closeable.h>
 
-class InputStream : public Closeable {
+class InputStream: public Closeable {
 public:
 
-    /**
-     * Returns the number of bytes that can be read(or skipped over) from this 
-     * input stream without blocking by the next caller of a method for this input stream.
-     * 
-     */
-    virtual int available();
+	virtual ~InputStream() {
+	}
 
-    /**
-     * Closes this input stream and releases any system resources associated 
-     * with the stream.
-     */
-    virtual void close();
+	/**
+	 * Returns the number of bytes that can be read(or skipped over) from this 
+	 * input stream without blocking by the next caller of a method for this input stream.
+	 * 
+	 */
+	virtual int available();
 
-    /**
-     * Marks the current position in this input stream.
-     */
-    virtual void mark();
+	/**
+	 * Closes this input stream and releases any system resources associated 
+	 * with the stream.
+	 */
+	virtual void close();
 
-    /**
-     * Tests if this input stream supports the mark and reset methods.
-     */
-    virtual bool markSupported();
+	/**
+	 * Marks the current position in this input stream.
+	 */
+	virtual void mark();
 
-    /**
-     * Reads the next unsigned char of data from the input stream.
-     */
-    virtual int read() = 0;
+	/**
+	 * Tests if this input stream supports the mark and reset methods.
+	 */
+	virtual bool markSupported();
 
-    /**
-     * Reads some number of bytes from the input stream and stores them into 
-     * the buffer array b.
-     */
-    virtual int read(unsigned char* b, int len);
+	/**
+	 * Reads the next unsigned char of data from the input stream.
+	 */
+	virtual int read() = 0;
 
-    /**
-     * Writes len of bytes into the stream.
-     * 
-     * @param b
-     * @param off
-     * @param len
-     * @return 
-     */
-    virtual int read(unsigned char* b, int off, int len);
+	/**
+	 * Reads some number of bytes from the input stream and stores them into 
+	 * the buffer array b.
+	 */
+	virtual int read(unsigned char* b, int len);
 
-    /**
-     * Repositions this stream to the position at the time the mark method was 
-     * last called on this input stream.
-     */
-    virtual void reset();
+	/**
+	 * Writes len of bytes into the stream.
+	 * 
+	 * @param b
+	 * @param off
+	 * @param len
+	 * @return 
+	 */
+	virtual int read(unsigned char* b, int off, int len);
 
-    /**
-     * Skips over and discards n bytes of data from this input stream.
-     */
-    virtual unsigned int skip(unsigned int n);
+	/**
+	 * Repositions this stream to the position at the time the mark method was 
+	 * last called on this input stream.
+	 */
+	virtual void reset();
+
+	/**
+	 * Skips over and discards n bytes of data from this input stream.
+	 */
+	virtual unsigned int skip(unsigned int n);
 };
 
 #endif /* __RASPBERRY_IO_INPUT_STREAM_H__ */

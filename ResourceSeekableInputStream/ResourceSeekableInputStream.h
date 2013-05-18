@@ -1,5 +1,5 @@
 /**
- * Arduino IO
+ * Raspberry IO
  * 
  * ResourceSeekableInputStream
  * 
@@ -19,19 +19,19 @@
 class ResourceSeekableInputStream : public ResourceInputStream, public SeekableInputStream {
 public:
 
-    /**
-     * Public constructor.
-     * 
-     * @param resource  The resource to be used.
-     */
-    ResourceSeekableInputStream(Resource* resource);
+	/**
+	 * Public constructor.
+	 * 
+	 * @param resource  The resource to be used.
+	 */
+	ResourceSeekableInputStream(Resource* resource);
 
-    /**
-     * Seeks this input stream to the position.
-     * 
-     * @param pos       THe position.
-     */
-    virtual void seek(unsigned int pos);
+	/**
+	 * Seeks this input stream to the position.
+	 * 
+	 * @param pos       THe position.
+	 */
+	virtual void seek(unsigned int pos);
 };
 
 #endif /* USING_RESOURCE_LIBRARIES */

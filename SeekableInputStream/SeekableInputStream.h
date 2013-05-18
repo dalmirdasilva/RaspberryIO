@@ -1,5 +1,5 @@
 /**
- * Arduino IO
+ * Raspberry IO
  * 
  * SeekableInputStream
  */
@@ -10,7 +10,7 @@
 #include <Seekable.h>
 #include <InputStream.h>
 
-class SeekableInputStream : public virtual Seekable, public virtual InputStream {
+class SeekableInputStream: public virtual Seekable, public virtual InputStream {
 public:
 
 };

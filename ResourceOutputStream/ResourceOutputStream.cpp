@@ -1,5 +1,5 @@
 /**
- * Arduino IO
+ * Raspberry IO
  * 
  * ResourceOutputStream
  *
@@ -17,11 +17,11 @@ ResourceOutputStream::ResourceOutputStream(Resource* resource) : resource(resour
 }
 
 void ResourceOutputStream::close() {
-    resource->close();
+	resource->close();
 }
 
 void ResourceOutputStream::write(unsigned char b) {
-    resource->write(b);
+	resource->write(b);
 }
 
 #endif /* USING_RESOURCE_LIBRARIES */

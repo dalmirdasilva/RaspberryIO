@@ -1,5 +1,5 @@
 /**
- * Arduino IO
+ * Raspberry IO
  * 
  * ByteArrayInputStream
  * 
@@ -13,33 +13,33 @@
 #include "ByteArrayInputStream.h"
 
 ByteArrayInputStream::ByteArrayInputStream(unsigned char* buf,
-        unsigned int count) :
-        buf(buf), count(count) {
-    markpos = 0;
-    pos = 0;
+		unsigned int count) :
+		buf(buf), count(count) {
+	markpos = 0;
+	pos = 0;
 }
 
 int ByteArrayInputStream::available() {
-    if ((count - pos) > 0) {
-        return 1;
-    }
-    return 0;
+	if ((count - pos) > 0) {
+		return 1;
+	}
+	return 0;
 }
 
 void ByteArrayInputStream::mark() {
-    markpos = pos;
+	markpos = pos;
 }
 
 bool ByteArrayInputStream::markSupported() {
-    return true;
+	return true;
 }
 
 int ByteArrayInputStream::read() {
-    return buf[pos++];
+	return buf[pos++];
 }
 
 void ByteArrayInputStream::reset() {
-    pos = markpos;
+	pos = markpos;
 }
 
 #endif /* __RASPBERRY_IO_BYTE_ARRAY_INPUT_STREAM_CPP__ */

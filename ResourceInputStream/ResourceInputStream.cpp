@@ -1,5 +1,5 @@
 /**
- * Arduino IO
+ * Raspberry IO
  * 
  * ResourceInputStream
  * 
@@ -14,42 +14,42 @@
 #include "ResourceInputStream.h"
 
 ResourceInputStream::ResourceInputStream(Resource* resource) : resource(resource) {
-    markpos = 0;
-    pos = 0;
-    resourceSize = resource->size();
-    resource->rewind();
+	markpos = 0;
+	pos = 0;
+	resourceSize = resource->size();
+	resource->rewind();
 }
 
 int ResourceInputStream::available() {
-    if ((resourceSize - pos) > 0) {
-        return 1;
-    }
-    return 0;
+	if ((resourceSize - pos) > 0) {
+		return 1;
+	}
+	return 0;
 }
 
 void ResourceInputStream::close() {
-    resource->close();
+	resource->close();
 }
 
 void ResourceInputStream::mark() {
-    markpos = pos;
+	markpos = pos;
 }
 
 bool ResourceInputStream::markSupported() {
-    return true;
+	return true;
 }
 
 int ResourceInputStream::read() {
-    if (resource->eor()) {
-        pos = resourceSize;
-        return -1;
-    }
-    pos++;
-    return (int) resource->read();
+	if (resource->eor()) {
+		pos = resourceSize;
+		return -1;
+	}
+	pos++;
+	return (int) resource->read();
 }
 
 void ResourceInputStream::reset() {
-    resource->seek((Resource::ResourceSeekOrigin)0, markpos);
+	resource->seek((Resource::ResourceSeekOrigin)0, markpos);
 }
 
 #endif /* USING_RESOURCE_LIBRARIES */

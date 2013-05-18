@@ -1,5 +1,5 @@
 /**
- * Arduino IO
+ * Raspberry IO
  * 
  * DataInputStream
  *
@@ -12,73 +12,69 @@
 #include "DataInputStream.h"
 
 DataInputStream::DataInputStream(InputStream* inputStream) :
-        inputStream(inputStream) {
+		inputStream(inputStream) {
 }
 
 unsigned char DataInputStream::readByte() {
-    return (unsigned char) inputStream->read();
+	return (unsigned char) inputStream->read();
 }
 
 bool DataInputStream::readBoolean() {
-    return (bool) inputStream->read();
+	return (bool) inputStream->read();
 }
 
 char DataInputStream::readChar() {
-    return (char) inputStream->read();
+	return (char) inputStream->read();
 }
 
 unsigned char DataInputStream::readUnsignedChar() {
-    return (unsigned char) inputStream->read();
+	return (unsigned char) inputStream->read();
 }
 
 int DataInputStream::readInt() {
-    int v = 0;
-    v = inputStream->read();
-    v <<= 8;
-    v |= (inputStream->read() & 0xff);
-    return v;
+	int v = 0;
+	v = inputStream->read();
+	v <<= 8;
+	v |= (inputStream->read() & 0xff);
+	return v;
 }
 
 unsigned int DataInputStream::readUnsignedInt() {
-    return (unsigned int) readInt();
-}
-
-word DataInputStream::readWord() {
-    return (word) readInt();
+	return (unsigned int) readInt();
 }
 
 long DataInputStream::readLong() {
-    long v = 0;
-    v = inputStream->read();
-    v <<= 8;
-    v |= (inputStream->read() & 0xff);
-    v <<= 8;
-    v |= (inputStream->read() & 0xff);
-    v <<= 8;
-    v |= (inputStream->read() & 0xff);
-    return v;
+	long v = 0;
+	v = inputStream->read();
+	v <<= 8;
+	v |= (inputStream->read() & 0xff);
+	v <<= 8;
+	v |= (inputStream->read() & 0xff);
+	v <<= 8;
+	v |= (inputStream->read() & 0xff);
+	return v;
 }
 
 unsigned long DataInputStream::readUnsignedLong() {
-    return (unsigned long) readLong();
+	return (unsigned long) readLong();
 }
 
 float DataInputStream::readFloat() {
-    return (float) readLong();
+	return (float) readLong();
 }
 
 double DataInputStream::readDouble() {
-    return (double) readLong();
+	return (double) readLong();
 }
 
 void DataInputStream::readFully(unsigned char* b, int len) {
-    for (int i = 0; i < len; i++) {
-        b[i] = inputStream->read();
-    }
+	for (int i = 0; i < len; i++) {
+		b[i] = inputStream->read();
+	}
 }
 
 unsigned int DataInputStream::skipBytes(unsigned int n) {
-    return inputStream->skip(n);
+	return inputStream->skip(n);
 }
 
 #endif /* __RASPBERRY_IO_DATA_INPUT_STREAM_CPP__ */

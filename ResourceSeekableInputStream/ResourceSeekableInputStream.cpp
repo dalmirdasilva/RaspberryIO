@@ -1,5 +1,5 @@
 /**
- * Arduino IO
+ * Raspberry IO
  * 
  * ResourceSeekableInputStream
  * 
@@ -18,7 +18,7 @@ ResourceSeekableInputStream::ResourceSeekableInputStream(Resource* resource) : R
 }
 
 void ResourceSeekableInputStream::seek(unsigned int pos) {
-    resource->seek((Resource::ResourceSeekOrigin)0, pos);
+	resource->seek((Resource::ResourceSeekOrigin)0, pos);
 }
 
 #endif /* USING_RESOURCE_LIBRARIES */
