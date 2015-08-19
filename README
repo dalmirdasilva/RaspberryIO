@@ -1,9 +1,0 @@
-RaspberryIO
-================
-
-ArduinoIO is a library based on the java.io package for Raspberry. 
-It is developed in C++.
-
-You can find the documentation in
-
-	http://www.itisopensource.com/raspberry/library/io/doc/html/
